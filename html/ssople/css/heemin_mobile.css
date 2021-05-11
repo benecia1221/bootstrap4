@@ -49,7 +49,7 @@
   .reservation .res_text {margin-bottom:0}
 
   .partyRoom .post-image .img_link {position:absolute; width:100%;height:100%;}
-  .partyRoom .post-image .img_link span{display:none;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);padding:6px;font-size:0.8rem;border:1px solid #fff;color:#fff;}
+  .partyRoom .post-image .img_link span{display:none;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-size:2rem;padding:40px;font-size:1.8rem;border:1px solid #fff;color:#fff;}
   .partyRoom .post-image .img_link:hover {display:block;width:100%;height:100%;background-color:rgba(0,0,0,.5)}
   .partyRoom .post-image .img_link:hover span{display:block;}
   .partyRoom .post-image .img_link span:hover {background-color:#ffaf24}

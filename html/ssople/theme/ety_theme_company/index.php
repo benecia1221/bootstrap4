@@ -100,7 +100,7 @@ include_once(G5_THEME_PATH.'/head.php');
 </div>
 
 <!-------------------------- 파티룸 -------------------------->
-<div class="partyRoom section container mt-md-5 mb-md-5">
+<div data-aos="slide-up" data-aos-duration="1000" class="partyRoom section container mt-md-5 mb-md-5">
   <h3 class="margin-bottom-50 partyRoom_header">PARTY ROOM</h3>
 
 
@@ -140,7 +140,7 @@ include_once(G5_THEME_PATH.'/head.php');
 <!-------------------------- 테마소개 + 유튜브영상 -------------------------->
 
 
-<div class="sec_youtube py-5 ">
+<div data-aos="fade-up" data-aos-duration="1500"  class="sec_youtube py-5 ">
   <div class="youtube_text container">
     <h3 class="hidden">youtube</h3>
   </div>
@@ -172,7 +172,7 @@ include_once(G5_THEME_PATH.'/head.php');
 
 
 <!-------------------------- /리뷰 -------------------------->
-<div class="review container margin-top-80 margin-bottom-80">
+<div data-aos="slide-up" data-aos-duration="1000"  class="review container margin-top-80 margin-bottom-80">
 	<h3 class="review_header">REVIEW</h3>
   <div class="best_reivew">
     <h4><i class="xi-crown"></i> REVIEW<span> BEST3 </span><i class="xi-crown"></i></h4>

@@ -29,5 +29,8 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
   <a href="#" class="mobile-topBtn"><i class="xi-arrow-up"></i><span class="hidden">탑버튼</a>
 
 </body>
+<script>
+    AOS.init();
+</script>
 </html>
 <?php echo html_end(); ?>
