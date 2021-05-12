@@ -122,6 +122,7 @@ body .parallax-mirror, body .parallax-window, body .callbox  {display:none}
 .partyRoom .relation_list .title {display:none;}
 .partyRoom .owl-stage-outer .post-subject strong {font-size:1.1rem;text-align:center;font-family:'paybooc-Bold';font-weight: normal}
 
+.mobile_reservation {display:none}
 .reservation {width:100%;max-height:90px;background-color:#ffc946;color:#fff;padding:18px;vertical-align:middle;text-align:center}
 .res_text {display:table;width:100%;}
 .res_text dt, body .res_text dd {display:table-cell;}

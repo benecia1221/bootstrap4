@@ -41,7 +41,7 @@ if (G5_IS_MOBILE) {
 					</p>
 					<p>
 						<i class="xi-lightbulb-o"></i> 사용한 테마 : free_ety_business_1.5.7z<br />
-						<i class="xi-lightbulb-o"></i> 사용한 플러그인 : pic_basic_owl / pic_basic_company<br />
+						<i class="xi-lightbulb-o"></i> 사용한 플러그인 : pic_basic_owl / pic_basic_company / aos.js 등<br />
 						<i class="xi-mail-o"></i> <a href="rlagmlals1221@naver.com" class="color-white">Email : rlagmlals1221@naver.com</a><br />
 						<i class="xi-call"></i> 연락처:010-9318-7297<br />
 					</p>

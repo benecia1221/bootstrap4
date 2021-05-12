@@ -8,7 +8,6 @@ $thumb_width = 200;
 $thumb_height = 200;
 ?>
 
-
 <div class="owl-carousel owl-theme">
     <?php
     for ($i=0; $i<count($list); $i++) {
@@ -23,7 +22,7 @@ $thumb_height = 200;
     $img_content = '<img src="'.$img.'" alt="'.$thumb['alt'].'" >';
     ?>
       <div class="item">
-      <div  class='mainSliderItem' style="background-image:url(<?php echo $img; ?>)">
+      <div  class="mainSliderItemb mainbg<?php echo $i; ?>" style="background-image:url(<?php echo $img; ?>); height:700px">
          <!-- <div class="mainSliderTitle">
             <h3><php echo $list[$i]['subject']; ?></h3>
             <p><php echo $list[$i]['wr_content']; ?></p>

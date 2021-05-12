@@ -8,7 +8,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
   <div class="fix_btn">
     <ul>
       <li>
-        <a href=""><button type="button" name="button"><i class="xi-search"></i><span>검색</span></button></a>
+        <a href="//heemin.dothome.co.kr"><button type="button" name="button"><i class="xi-gift-o"></i><span>포트폴리오</span></button></a>
       </li>
       <li>
         <a href="/ssople/bbs/board.php?bo_table=reservation"><button type="button" name="button"><i class="xi-calendar-check"></i><span>예약 바로가기</span></button></a>
