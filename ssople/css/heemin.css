@@ -1,0 +1,237 @@
+
+@font-face {
+    font-family: 'twayair';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twayair.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'regularsize';  /*기본폰트*/
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'paybooc-Bold'; /*nav폰트*/
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body legend {height:0}
+body .navigation.container-fluid {height:0!important; overflow:hidden;}
+body{font-family:'regularsize'!important}
+body.popShow{ overflow-y: hidden;}
+body.popShow:before{
+  z-index:999;
+  content: ""; display: block; position: fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,.8)}
+
+.hidden {position:absolute;margin:0;padding:0;font-size:0;line-height:0;text-indent:-9999em;overflow:hidden}
+.wait-animation{
+	-webkit-animation-play-state: paused;
+    animation-play-state: paused;
+	}
+body .owl-theme {}
+
+/* 메인슬라이드 인디케이트 수정 */
+body .owl-theme .owl-dots {
+	position:absolute;
+	left:0;right:0;bottom:30px;
+	z-index:1000;
+  text-align:center;
+}
+
+body .owl-theme .owl-dots .owl-dot {
+  display:inline-block;
+	background-color:transparent;
+	outline:none;
+  transition:0.6s;
+}
+body .owl-theme .owl-dots .owl-dot.active span{
+   width:60px;
+   margin:auto;
+	 background-color:#ffaf24;
+	 transition:2.5s;
+	 border-radius: 20px;
+}
+body .owl-theme .owl-dots .owl-dot span {
+    height: 8px;
+    margin: 0;
+    background-color: #ddd;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: .2s ease;
+    border-radius: 20px;
+}
+
+/* controler wropper */
+body .owl-theme .owl-nav {position:absolute;z-index:1000; left:0; right:0;top:50%; height:0}
+body .owl-carousel .owl-nav button.owl-next,
+body .owl-carousel .owl-nav button.owl-prev {
+	position:absolute; width:60px;height:60px;border:1px solid #222;
+	margin-top: -30px; transform:rotate(-45deg); transform-origin:center;background-color:transparent !important; outline: none;
+}
+body .owl-carousel .owl-nav button span {display:none}
+
+body .owl-carousel .owl-nav button.owl-next{right:50px;border-width:0 2px 2px 0}
+body .owl-carousel .owl-nav button.owl-prev{left:50px;border-width:2px 0 0 2px}
+
+
+
+.mainSliderItem {
+	display:block;
+	height:calc(100vh - 100px);
+	max-height:700px;
+	position:relative;
+	background-repeat: no-repeat;
+	background-position:center;
+	background-size:auto 100%;
+}
+.mainSliderItem .mainSliderTitle {
+	position:absolute;top:50%; left:50%;
+	transform:translate(-50%, -50%);
+	text-align:center;
+}
+.mainSliderItem .mainSliderTitle h3{font-size:2em;}
+.mainSliderItem .mainSliderTitle p {}
+.mainSliderItem .mainSliderTitle a {border:1px solid #222;padding: 5px 10px; display:inline-block;}
+
+.top-line,
+.fixed-top {transition: 0.5s}
+.scroll .fixed-top { top:0; background-color:#fff!important}
+.scroll .top-line{ transform: translateY(-100%);}
+.scroll .navbar-brand svg path{ }
+.scroll .nav-item > a {}
+
+body .navbar {max-height:100px;padding:0;width:100%;box-shadow:none;background-color:transparent!important}
+body .navbar a {font-family:'paybooc-Bold'!important}
+body .navbar-brand {display:table-cell;padding-bottom:0;padding-top:10px;vertical-align:middle;}
+/* body .navbar-nav {display:table-cell!important;vertical-align:right} */
+body .collapse a {color:black;font-size:1.18rem}
+body .collapse a:hover {color:#ffaf24}
+body .navbar-nav .nav-item {margin:0 20px;}
+body .navbar .container {max-width:100%;margin-right:30px}
+body .parallax-mirror, body .parallax-window, body .callbox  {display:none}
+
+.user_login ul {margin:0;width:200px;}
+.user_login ul li {display:inline-block; padding:10px}
+.user_login ul li:first-child{padding-left:0;}
+.user_login ul li:first-child:after {content:'';display:inline-block;width:1.5px;height:15px;background-color:black}
+.user_login ul li a {font-family: 'regularsize'!important;color:black}
+.user_login ul li a:first-child {display:inline-block;padding-right:20px}
+.user_login ul li a:hover {color:#ffb500}
+.user_login .login_mypage {font-size:1.4rem}
+
+.partyRoom_header {text-align:center;margin-top:80px;font-size:2.3rem}
+.partyRoom_header:after {display:block;content:'';width:300px;height:3px;background-color:black;margin:0 auto;margin-top:20px}
+.partyRoom .relation_list .title {display:none;}
+.partyRoom .owl-stage-outer .post-subject strong {font-size:1.1rem;text-align:center;font-family:'paybooc-Bold';font-weight: normal}
+
+.mobile_reservation {display:none}
+.reservation {width:100%;max-height:130px;background-color:#ffc946;color:#222;padding:30px;vertical-align:middle;text-align:center}
+.res_text {display:table;width:100%;}
+.res_text span {font-size:1.5rem}
+.res_text dt, body .res_text dd {display:table-cell;}
+.res_text dt {font-size:2rem;text-align:left;vertical-align: middle;}
+.res_text dd li, .res_text dd, .res_text button {display:inline-block;text-align:right;}
+.res_text button {background-color:transparent;border:0;padding:8px 0;width:10px;margin-right:10px}
+.res_text button i {color:#222;font-size:2rem;}
+.reservation input {border:0;background-color:transparent;border-bottom:1px solid #222}
+.reservation ul li:nth-child(2) {margin-left:40px}
+.reservation dl, .reservation ul {margin-bottom:0}
+
+
+
+.re_party {background-color:transparent;min-height:70px;margin:10px 0;}
+.re_party ul {margin:40px 0;text-align:center;line-height: 70px;}
+.re_party ul li {display:inline-block;margin:0 ;background-color:transparent;margin:8px 7px;}
+.re_party ul li a {font-size:1.2rem;padding:20px 20px;border:2px solid #222;border-radius:40px;color:#222}
+.re_party ul li:hover a{color:#fff;background-color:#ffaf24;border:2px solid #ffa200}
+.mobile_re_party {display:none}
+
+body #divConcierge  .post-subject {min-height:40px;padding-top:5px}
+body .post-text {display:none;}
+
+body .sec_youtube {
+  margin-top:50px;
+	padding-bottom: 0;
+	background:url('./images/youtube_bg.png') no-repeat;
+
+}
+
+#youtube .youtube_thum {position:relative; height:0; padding-bottom:56%}
+#youtube iframe{position:absolute;left:0;top:0;}
+.youtube_text p {font-size:2rem;text-align:center;vertical-align:middle;padding-bottom:20px;}
+.youtube_text p span {font-size:2.5rem;font-weight:bold}
+.youtube_text p span:nth-child(1) {color:#00ccd3;}
+.youtube_text p span:nth-child(2) {color:#ff9c00;}
+.youtube_text {padding-top:20px}
+.youtube_hash  {margin:20px auto;text-align:center;}
+.youtube_hash li {display:inline-block;padding:10px 20px;margin:0 8px;background-color:#ffdb85;border-radius: 40px;}
+.youtube_hash li a {font-size:1.4rem;color:black}
+.youtube_hash li:hover a{color:#fff;}
+.youtube_hash li:hover{background-color:#ffaf24}
+
+
+.review_header {margin-top:80px;margin-bottom:20px;text-align:center;font-size:2.3rem}
+.review_header:after {display:block;content:'';width:300px;height:3px;background-color:black;margin:0 auto;margin-top:20px}
+
+.review_plus {font-size:2rem;position:absolute;top:0;right:0}
+.best_reivew {position:relative;text-align:center;font-size:0.8rem;padding:10px}
+.best_reivew span {color:#ffb223}
+.review_foot .relation_list .title, .review_foot span, .review_foot .prd_good_item .relation_recopick .owl-nav {display:none}
+.review_foot {margin-top:30px}
+.review_foot .post-subject {display:none}
+
+.initial {background-color:#fff7da}
+.initial_warp {display:table;padding:30px 0;width:100%}
+.initial_warp p {display:table-cell;font-size:1.7rem;vertical-align: middle;}
+.initial_link {display:table-cell;font-size:1.5rem;vertical-align: middle;text-align:right}
+.initial_link a {background-color:#ffdb85;padding:20px;border-radius:40px;color:black}
+.initial_link:hover a{color:#fff;background-color:#ffaf24;}
+
+
+.guide {
+	background-color:#ffc154;
+	text-align:center;
+}
+.guide a {display:block;}
+.guide .container > a {padding-top:20px;font-size:2rem;color:#fff;font-weight:bold;text-align:center;}
+.guide .guide_contents ul {margin:0}
+.guide .guide_contents li {display:inline-block;padding:30px 20px;margin:20px 30px;padding-bottom:10px;border:2px solid #fff;border-radius:30px}
+.guide .guide_contents a {width:150px;height:100px;}
+.guide .guide_contents a i {color:#fff;font-size:5rem;}
+.guide .guide_contents li span {color:#fff;font-size:1.25rem}
+.guide p {text-align:center;color:#fff;padding:20px 0;}
+.guide .guide_contents li:hover {transform:scale(1.1)}
+
+.partyRoom .post-image .img_link {position:absolute; width:100%;height:100%;}
+.partyRoom .post-image .img_link span{display:none;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);padding:15px;font-size:1.7rem;border:1px solid #fff;color:#fff;}
+.partyRoom .post-image .img_link:hover {display:block;width:100%;height:100%;background-color:rgba(0,0,0,.5)}
+.partyRoom .post-image .img_link:hover span{display:block;}
+.partyRoom .post-image .img_link span:hover {background-color:#ffaf24}
+
+.popup_event .popup_event_link {
+  position:absolute;bottom:10%;left:50%;transform:translateX(-50%);
+  width:200px;height:50px;
+  vertical-align:middle;text-align:center;
+  display:block;background-color:#f94e71;border-radius:40px;
+  padding:10px 20px;color:#fff;font-size:1.2rem}
+
+
+body .fix_btn {position:fixed;right:0;bottom:0;z-index:100;background-color:#ffb223;border-radius:70px;text-align:center;margin:30px;margin-bottom:50px}
+body .fix_btn button {background-color:transparent;border:0; color:#fff;padding:10px;}
+body .fix_btn button i {font-size:2.5rem}
+body .fix_btn button span {display:block;font-size:0.8rem}
+body .fix_btn p {font-size:0.7rem;color:#fff;}
+.mobile-topBtn {display:none}
+
+
+/* 제작노트 팝업 */
+#hd_pops_1 {top:50%!important;left:50%!important;transform:translate(-50%,-50%);}
+#hd_pops_1 .close_btn {position:absolute;top:-8%;right:-5%;font-size:2.7rem; color:#fff;}
+#hd_pops_1 .popup_event .link {display:block;position:absolute;width:185px;height:55px;cursor:pointer;}
+#hd_pops_1 .popup_event .plan {top:75%;left:16%;}
+#hd_pops_1 .popup_event .git {top:84%;left:16%;}
+
+#hd_pops_1 .hd_pops_reject {display:none}
+#hd_pops_1 .hd_pops_close {float:right}
